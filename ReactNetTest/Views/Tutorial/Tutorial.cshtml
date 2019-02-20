@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ReactNetTest.Models.Tutorial.CommentModel>
+
+@Html.React("CommentBox", new
+{
+    initialData = Model,
+    url = Url.Action("Comments", "Tutorial"),
+    submitUrl = Url.Action("AddComment", "Tutorial"),
+    pollInterval = 10000
+})
+
+<h2>Tutorial</h2>
+
+<div id="content"></div>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="@Url.Content("~/Tutorial/Tutorial.jsx")"></script>
+@Html.ReactInitJavaScript()
