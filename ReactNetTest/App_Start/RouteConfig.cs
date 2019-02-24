@@ -15,7 +15,7 @@ namespace ReactNetTest
 
             routes.MapRoute(
                 name: "Tutorial",
-                url: "{controller}/{action}/{id}",
+                url: "Tutorial/{controller}/{action}/{id}",
                 defaults: new { controller = "Tutorial", action = "Tutorial", id = UrlParameter.Optional }
             );
 

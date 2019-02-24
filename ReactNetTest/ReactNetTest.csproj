@@ -120,10 +120,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Frontend\src\entrypoint.jsx" />
+    <Content Include="Frontend\src\es6script.js" />
+    <Content Include="Frontend\src\helloworld.jsx" />
     <Content Include="Global.asax" />
     <Content Include="Tutorial\remarkable.min.js" />
     <Content Include="Tutorial\Tutorial.jsx" />
     <Content Include="Web.config" />
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ReactConfig.cs" />
@@ -138,6 +142,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include=".babelrc" />
+    <Content Include="package.json" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

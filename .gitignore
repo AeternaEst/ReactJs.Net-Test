@@ -2,3 +2,5 @@
 packages/
 ReactNetTest/bin/
 ReactNetTest/obj/
+ReactNetTest/node_modules/
+ReactNetTest/Frontend/dist/

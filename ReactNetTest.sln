@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNetTest", "ReactNetTest\ReactNetTest.csproj", "{29F93FFE-D059-4F68-ABA3-D58A7D713B8A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{196BF4AF-628E-47AF-A211-B06497B7307D}"
+	ProjectSection(SolutionItems) = preProject
+		ReactNetTest\.babelrc = ReactNetTest\.babelrc
+		ReactNetTest\getting started.txt = ReactNetTest\getting started.txt
+		ReactNetTest\package.json = ReactNetTest\package.json
+		ReactNetTest\webpack.config.js = ReactNetTest\webpack.config.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

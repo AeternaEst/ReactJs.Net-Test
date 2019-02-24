@@ -1,0 +1,5 @@
+Running the project
+
+CLI: npx webpack
+
+NPM: npm run-script build
