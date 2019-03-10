@@ -18,7 +18,8 @@
   "homepage": "https://github.com/AeternaEst/ReactJs.Net-Test#readme",
   "dependencies": {
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "react-dom-server": "0.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

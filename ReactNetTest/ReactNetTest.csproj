@@ -120,9 +120,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Frontend\src\entrypoint.jsx" />
-    <Content Include="Frontend\src\es6script.js" />
-    <Content Include="Frontend\src\helloworld.jsx" />
+    <Content Include="Frontend\src\client.jsx" />
+    <Content Include="Frontend\src\components\helloworld.jsx" />
+    <Content Include="Frontend\src\expose-components.js" />
     <Content Include="Global.asax" />
     <Content Include="Tutorial\remarkable.min.js" />
     <Content Include="Tutorial\Tutorial.jsx" />

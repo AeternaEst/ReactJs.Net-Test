@@ -1,7 +1,6 @@
 ﻿
 <h2>Index</h2>
 
-@*<script src="~/Frontend/dist/script-compiled.js" type="text/javascript"></script>*@        
-<script src="~/node_modules\react\umd\react.development.js" type="text/javascript"></script>
-@*<script src="~/Frontend/dist/script-react-compiled.js" type="text/javascript"></script>*@
-<script src="~/Frontend/dist/bundle.js" type="text/javascript"></script>
+@Html.React("HelloWorld", new {}, containerId: "helloworld")
+
+<script src="~/Frontend/dist/client.bundle.js" type="text/javascript"></script>

@@ -26,8 +26,13 @@ namespace ReactNetTest
             //	.SetLoadBabel(false)
             //	.AddScriptWithoutTransform("~/Scripts/bundle.server.js")
 
-		    ReactSiteConfiguration.Configuration
-		        .AddScript("~/Tutorial/Tutorial.jsx");
+            //Can be disabled if Tutorial.jsx isen't loaded
+            ReactSiteConfiguration.Configuration.SetLoadBabel(true);
+            ReactSiteConfiguration.Configuration.SetLoadReact(true);
+
+            ReactSiteConfiguration.Configuration.AddScriptWithoutTransform("~/Frontend/dist/server.bundle.js");
+
+		    ReactSiteConfiguration.Configuration.AddScript("~/Tutorial/Tutorial.jsx");
 
             JsEngineSwitcher.Current.DefaultEngineName = V8JsEngine.EngineName;
 		    JsEngineSwitcher.Current.EngineFactories.AddV8();		    

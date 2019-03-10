@@ -11,6 +11,7 @@ class CommentBox extends React.Component {
         this.handleCommentSubmit = this.handleCommentSubmit.bind(this);
     }
     loadCommentsFromServer() {
+        console.log("Loading comments from server");
         const xhr = new XMLHttpRequest();
         xhr.open('get', this.props.url, true);
         xhr.onload = () => {

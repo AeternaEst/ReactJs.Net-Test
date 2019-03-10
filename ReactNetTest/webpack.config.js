@@ -1,6 +1,11 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
-  entry: ['./Frontend/src/helloworld.jsx', './Frontend/src/entrypoint.jsx'],
+  entry: {
+        server: ['./Frontend/src/expose-components.js'],
+		client: ['./Frontend/src/client.jsx']
+    },
   module: {
     rules: [
       {
@@ -16,6 +21,6 @@ module.exports = {
   output: {
     path: __dirname + '/Frontend/dist',
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   }
 };
