@@ -9,10 +9,10 @@ namespace ReactNetTest.Models.BlogPost
     public class Comment
     {
         [JsonProperty("name")]
-        public string name { get; set; }
+        public string Name { get; set; }
         [JsonProperty("date")]
-        public string date { get; set; }
+        public string Date { get; set; }
         [JsonProperty("text")]
-        public string text { get; set; }
+        public string Text { get; set; }
     }
 }

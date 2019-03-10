@@ -16,7 +16,6 @@ class BlogPost extends React.Component {
         xhr.open('get', '/blogpost/getcomments', true);
         xhr.onload = () => {
             const data = JSON.parse(xhr.responseText);
-            console.log(data);
             this.setState({
                 isLoading: false,
                 comments: data

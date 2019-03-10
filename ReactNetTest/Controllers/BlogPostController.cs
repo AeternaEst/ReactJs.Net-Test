@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json;
 using ReactNetTest.Models.BlogPost;
+using ReactNetTest.Models.React;
 
 namespace ReactNetTest.Controllers
 {
@@ -22,21 +24,21 @@ namespace ReactNetTest.Controllers
         {
             new Comment
             {
-                name = "Nicholas",
-                date = DateTime.Now.ToShortDateString(),
-                text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                Name = "Nicholas",
+                Date = DateTime.Now.ToShortDateString(),
+                Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             new Comment
             {
-                name = "Nicholas",
-                date = DateTime.Now.ToShortDateString(),
-                text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                Name = "Nicholas",
+                Date = DateTime.Now.ToShortDateString(),
+                Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             new Comment
             {
-                name = "Nicholas",
-                date = DateTime.Now.ToShortDateString(),
-                text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                Name = "Nicholas",
+                Date = DateTime.Now.ToShortDateString(),
+                Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         };
 
@@ -48,7 +50,7 @@ namespace ReactNetTest.Controllers
         public ActionResult GetComments()
         {
             Thread.Sleep(3000);
-            return Json(Comments, JsonRequestBehavior.AllowGet);
+            return new Models.Json.JsonResult(Comments);
         }
     }
 }
