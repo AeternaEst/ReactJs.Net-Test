@@ -121,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Frontend\src\client.jsx" />
+    <Content Include="Frontend\src\components\loader.jsx" />
+    <Content Include="Frontend\src\components\comment.jsx" />
+    <Content Include="Frontend\src\components\blogpost.jsx" />
     <Content Include="Frontend\src\components\helloworld.jsx" />
     <Content Include="Frontend\src\expose-components.js" />
     <Content Include="Global.asax" />
@@ -132,11 +135,14 @@
   <ItemGroup>
     <Compile Include="App_Start\ReactConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BlogPostController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TutorialController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BlogPost\BlogPost.cs" />
+    <Compile Include="Models\BlogPost\Comment.cs" />
     <Compile Include="Models\Tutorial\CommentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -149,6 +155,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="Views\Tutorial\Tutorial.cshtml" />
+    <Content Include="Views\BlogPost\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
