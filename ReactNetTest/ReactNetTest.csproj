@@ -145,6 +145,7 @@
     <Compile Include="Models\BlogPost\Comment.cs" />
     <Compile Include="Models\Json\JsonResult.cs" />
     <Compile Include="Models\React\ReactModel.cs" />
+    <Compile Include="Models\React\ReactResult.cs" />
     <Compile Include="Models\Tutorial\CommentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

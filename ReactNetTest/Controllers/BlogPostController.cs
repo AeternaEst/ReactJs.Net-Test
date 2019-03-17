@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
@@ -44,6 +45,8 @@ namespace ReactNetTest.Controllers
 
         public ActionResult Index()
         {
+            //This result dosen't make sense on a normal MVC site, since the layout won't be loaded 
+            //return new ReactResult<BlogPost>("BlogPost", BlogPost);
             return View(BlogPost);
         }
 
