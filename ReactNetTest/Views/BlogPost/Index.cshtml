@@ -1,8 +1,4 @@
-﻿@using Newtonsoft.Json
+﻿@using ReactNetTest.HtmlHelperExtensions
 @model ReactNetTest.Models.BlogPost.BlogPost
-    
-@Html.React("BlogPost", Model, containerId: "blogpost")
 
-<script id="blogpostdata">
-    @Html.Raw(JsonConvert.SerializeObject(Model))
-</script>
+@Html.ReactWithModel("BlogPost", Model)

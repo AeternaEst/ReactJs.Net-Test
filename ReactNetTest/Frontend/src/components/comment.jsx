@@ -5,7 +5,6 @@ class Comment extends React.Component {
       super(props);
     }
     render() {
-        console.log("inside comment " + this.props.name);
       return (<div>
           <h5>{this.props.name}</h5>
           <span>{this.props.date}</span>

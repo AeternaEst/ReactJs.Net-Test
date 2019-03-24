@@ -148,6 +148,7 @@
     <Compile Include="Models\React\ReactResult.cs" />
     <Compile Include="Models\Tutorial\CommentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HtmlHelperExtensions\HtmlHelperExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
