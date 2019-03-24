@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BlogPost from './components/blogpost';
+import PersonOverview, { personTestData } from './components/personoverview';
 
 /* Add Components manually here*/
 //const helloWorld = document.getElementById("helloworld");
@@ -9,25 +9,21 @@ import BlogPost from './components/blogpost';
 //    ReactDOM.hydrate(<HelloWorld/>, helloWorld);
 //}
 
-//const blogpostComponent = document.querySelector("div[data-react-component=blogpost]");
-//const blogpostContainer = blogpostComponent.querySelector("#blogpost");
-//const blogpostScript = blogpostComponent.querySelector("script");
-//if (blogpostComponent && blogpostContainer && blogpostScript) {
-//    console.log("Hydrating blogpost");
-//    const blogpostData = blogpostScript.innerText;
-//    const blogpostProps = JSON.parse(blogpostData);
-//    ReactDOM.hydrate(<BlogPost {...blogpostProps}/>, blogpostContainer);
+//const personOverview = document.getElementById("personoverview");
+//if (personOverview) {
+//    console.log("Rendering PersonOverview");
+//    ReactDOM.render(<PersonOverview { ...personTestData }/>, personOverview);
 //}
 
 /* Automatically add components */
 const components = document.querySelectorAll("div[data-react-component]");
 components.forEach(component => {
     const componentId = component.getAttribute("data-react-component");
-    console.log(`Found component: ${componentId}`);
+    console.log(`Found component ${componentId}`);
     const componentContainer = component.querySelector(`#${componentId}`);
     const componentScript = component.querySelector("script");
     if (componentContainer && componentScript) {
-        console.log(`Hydrating: ${componentId}`);
+        console.log(`Hydrating ${componentId}`);
         const componentData = componentScript.innerText;
         const componentProps = JSON.parse(componentData);
         import(`./components/${componentId}`).then(foo => {

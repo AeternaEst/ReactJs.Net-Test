@@ -22,7 +22,7 @@ namespace ReactNetTest
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "BlogPost", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Person", action = "Overview", id = UrlParameter.Optional }
             );
         }
     }

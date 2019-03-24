@@ -39,7 +39,7 @@ namespace ReactNetTest.HtmlHelperExtensions
                 sb.Append($"<div data-react-component=\"{componentName.ToLower()}\">");
                 sb.Append(originalResult);
                 sb.Append($"<script>");
-                sb.Append(serializedModel);
+                sb.Append($"{serializedModel}");
                 sb.Append("</script>");
                 sb.Append("</div>");
 

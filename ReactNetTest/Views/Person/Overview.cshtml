@@ -1,0 +1,21 @@
+﻿@using ReactNetTest.HtmlHelperExtensions
+@model ReactNetTest.Models.Person.PersonOverview
+
+<style>
+    .background-red {
+        background-color: red;
+    }
+    .background-green {
+        background-color: green;
+    }
+    .person-details {
+        border: 1px solid black;
+        margin: 10px;
+    }
+    .person-details--selected {
+        border: 5px solid green;
+    }
+</style>
+
+@Html.ReactWithModel("PersonOverview", Model)
+                                    

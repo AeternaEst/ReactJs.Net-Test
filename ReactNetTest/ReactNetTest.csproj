@@ -121,10 +121,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Frontend\src\client.jsx" />
+    <Content Include="Frontend\src\components\standardbutton.jsx" />
     <Content Include="Frontend\src\components\loader.jsx" />
     <Content Include="Frontend\src\components\comment.jsx" />
     <Content Include="Frontend\src\components\blogpost.jsx" />
     <Content Include="Frontend\src\components\helloworld.jsx" />
+    <Content Include="Frontend\src\components\persondetails.jsx" />
+    <Content Include="Frontend\src\components\personlist.jsx" />
+    <Content Include="Frontend\src\components\personoverview.jsx" />
     <Content Include="Frontend\src\expose-components.js" />
     <Content Include="Global.asax" />
     <Content Include="Tutorial\remarkable.min.js" />
@@ -137,6 +141,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogPostController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\TutorialController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +149,7 @@
     <Compile Include="Models\BlogPost\BlogPost.cs" />
     <Compile Include="Models\BlogPost\Comment.cs" />
     <Compile Include="Models\Json\JsonResult.cs" />
+    <Compile Include="Models\Person\PersonOverview.cs" />
     <Compile Include="Models\React\ReactModel.cs" />
     <Compile Include="Models\React\ReactResult.cs" />
     <Compile Include="Models\Tutorial\CommentModel.cs" />
@@ -160,6 +166,7 @@
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="Views\Tutorial\Tutorial.cshtml" />
     <Content Include="Views\BlogPost\Index.cshtml" />
+    <Content Include="Views\Person\Overview.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
